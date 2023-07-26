@@ -1,0 +1,64 @@
+// Define some variables
+$white: #ffffff;
+$ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+$width: 800px;
+
+// Define a mixin for the center alignment
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Style the body element
+body {
+  font-family: $ubuntu-font;
+  background-color: lightblue;
+}
+
+// Style the h1 element
+h1 {
+  text-align: center;
+  color: white;
+}
+
+// Style the img element
+img {
+  @include center; // use the mixin
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+// Style the p element
+p {
+  text-align: center;
+  color: black;
+}
+
+// Style the ul element
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+// Style the li element
+li {
+  margin: 10px;
+}
+
+// Style the a element
+a {
+  text-decoration: none;
+  color: white;
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+// Style the answer element
+#answer {
+  color: red;
+  display: none;
+}
